@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .wrapper {
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .color-white {
+      color: white;
+    }
+
+    .color-greyish-blue {
+      color: hsl(217, 19%, 35%);
+    }
+
+    .bg-light-grey {
+      background-color: hsl(0, 0%, 81%);
+    }
+
+    .bg-light-greyish-blue {
+      background-color: hsl(210, 46%, 95%);
+    }
+
+    .bg-moderate-violet {
+      background-color: hsl(263, 55%, 52%)
+    }
+
+    .bg-grayish-blue {
+      background-color: hsl(217, 19%, 35%);
+    }
+
+    .bg-blackish-blue {
+      background-color: hsl(219, 29%, 14%);
+    }
+
+    .bg-white {
+      background-color: hsl(0, 0%, 100%);
+    }
+
+    .root-container {
+      max-width: 75%;
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+
+    .two-card-row-container > .large-card {
+      flex-basis: 300px;
+    }
+    
+    .two-card-row-container > .small-card {
+      flex-basis: 100px;
+    }
+
+    .card {
+      min-width: 200px;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 6px 4px 10px rgb(46, 41, 41, 0.2);
+    }
+
+    .two-card-row-container {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 1em;
+    }
+
+    .two-card-row-container > * {
+      flex: 1 1 0;
+    }
+
+    .left-container {
+      flex: 2 1 300px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+
+    .single-card-row-container {
+      flex: 1 1 100px;
+      display: flex;
+    }
+
+    .person-name {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .person-title {
+      margin: 0;
+    }
+
+    .person-credentials-container > img {
+      border-radius: 50%;
+      height: 42px;
+    }
+
+    .person-credentials-container {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .person-description {
+      font-weight: 700;
+      font-size: larger;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-light-greyish-blue color-white">
+  <div class="wrapper">
+    <div class="root-container">
+      <div class="left-container">
+        <div class="two-card-row-container">
+          <div class="daniel-container card large-card bg-moderate-violet">
+            <div class="person-credentials-container">
+              <img src="/images/image-daniel.jpg"/>
+              <div>
+                <p class="person-name">Daniel Clifford</p>
+                <p class="person-title">Verified Graduate</p>
+              </div>
+
+            </div>
+            
+            
+            <p class="person-description">
+              I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+              in the company I joined. I honestly feel I got every penny’s worth.
+            </p>
+
+            <p class="person-quote">
+              “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+              transition and have heard some people who had an amazing experience here. I signed up 
+              for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+              The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+              the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+            </p>
+           
+          </div>
+          <div class="jonathan-container card small-card bg-grayish-blue">
+            Jonathan Walters
+            Verified Graduate
+          
+            The team was very supportive and kept me motivated
+          
+            “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+            for a big company. This was one of the best investments I’ve made in myself. ”
+          </div>
+        </div>
+        <div class="two-card-row-container">
+          <div class="jeanette-container color-greyish-blue card small-card bg-white">
+            Jeanette Harmon
+            Verified Graduate
+          
+            An overall wonderful and rewarding experience
+          
+            “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+            while doing something I love.”
+          </div>
+          <div class="patrick-container card large-card bg-blackish-blue">
+            Patrick Abrams
+            Verified Graduate
+          
+            Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+            learning from their experiences was easy.
+          
+            “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+            gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+            junior developer. The standard is above the rest. You will get the personal attention you need from 
+            an incredible community of smart and amazing people. ”
+          </div>
+        </div>
+      </div>
+  
+      <div class="single-card-row-container">
+        <div class="kira-container card bg-white color-greyish-blue">
+          Kira Whittle
+          Verified Graduate
+        
+          Such a life-changing experience. Highly recommended!
+        
+          “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+          professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+          student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+          did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+          project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+          could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+          experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+          100% recommend! ”
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
